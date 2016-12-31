@@ -36,6 +36,16 @@ public class HomeController {
     public String index() {
         return "index";
     }
+
+	@RequestMapping("/myPreferences")
+    public String myPreferences() {
+        return "myPreferences";
+    }
+	
+	@RequestMapping("/myTrips")
+    public String myTrips() {
+        return "myTrips";
+    }
 	
 	@RequestMapping(value = "/signup", method = RequestMethod.GET)
     public String signup(Model model) {
